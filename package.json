@@ -2,7 +2,7 @@
   "name": "vue-webpack-template",
   "version": "0.1.0",
   "description": "vue-webapck-template",
-  "main": "src/index.js",
+  "main": "src/main.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "webpack-dev-server --open --inline  --progress --config build/webpack.dev.js",
