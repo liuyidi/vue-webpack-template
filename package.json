@@ -1,0 +1,64 @@
+{
+  "name": "vue-webpack-template",
+  "version": "0.1.0",
+  "description": "vue-webapck-template",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "dev": "webpack-dev-server --open --inline  --progress --config build/webpack.dev.js",
+    "build": "webpack --config build/webpack.prod.js",
+    "lint": "eslint bin src test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FEUI/vue-webpack-template.git"
+  },
+  "keywords": [
+    "vue",
+    "webpack"
+  ],
+  "author": "liuyidi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FEUI/vue-webpack-template/issues"
+  },
+  "homepage": "https://github.com/FEUI/vue-webpack-template#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "node-sass": "^4.8.3",
+    "sass-loader": "^7.0.1",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ],
+    "test/**/*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "browserslist": [
+    ">1%"
+  ]
+}
