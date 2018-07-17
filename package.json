@@ -1,6 +1,6 @@
 {
-  "name": "vue-webpack-template",
-  "version": "0.1.0",
+  "name": "@feui/vue-webpack-template",
+  "version": "0.0.2",
   "description": "vue-webapck-template",
   "main": "src/main.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "vue",
     "webpack"
   ],
-  "author": "liuyidi",
+  "author": "liuyidi <liuyidi1993@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/FEUI/vue-webpack-template/issues"
